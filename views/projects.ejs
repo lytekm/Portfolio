@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | <%- title %></title>
+    <link rel="stylesheet" href="/stylesheets/global.css" />
+    <link rel="stylesheet" href="/stylesheets/partials.css" />
+    <link rel="stylesheet" href="/stylesheets/projects.css" />
+  </head>
+  <body>
+    <%- include('partials/header.ejs', {aboutActive: "", projectsActive:
+    "active", servicesActive: "", contactActive: ""}) %>
+    <main class="main">
+      <h1>Projects</h1>
+      <p>
+        Here are some of the projects I have worked on. Some are personal
+        projects and some are projects I have worked on for clients. I am
+        currently working on a few projects that I will add to this page when
+        they are finished.
+      </p>
+      <div class="projects-container">
+        <div class="project">
+          <%- include ('partials/pages-box.ejs', {pageLink:
+          "https://membrant.netlify.app", imageSrc:
+          "https://i.imgur.com/0q1bJzr.jpg", imageAlt: "membrant", pageText:
+          "Membrant"}) %>
+          <p>
+            Membrant is an app I create for myself to stay organized. It
+            includes a day planner to schedule your days, project managment
+            where you can break down projects into smaller tasks and keep track
+            of them, and a daily task list for one off tasks you have to do that
+            day. And there is more to come as I still update it regularly.
+          </p>
+        </div>
+        <div class="project">
+          <%- include ('partials/pages-box.ejs', {pageLink:
+          "https://github.com/lytekm/FlappyBird", imageSrc:
+          "images/LyteDev.png", imageAlt: "membrant", pageText: "FlappyBird"})
+          %>
+          <p>
+            This is a clone of Flappy Bird that I made using HTML canvas and
+            Javascript.
+          </p>
+        </div>
+        <div class="project">
+          <%- include ('partials/pages-box.ejs', {pageLink:
+          "https://github.com/lytekm/Automate", imageSrc: "images/LyteDev.png",
+          imageAlt: "membrant", pageText: "Automation"}) %>
+          <p>
+            This is a simple automation tool that includes an automatic file
+            sorter, macros, and project templates made with python. It has a CLI
+            that you can use to set up macros, and file locations to sort files
+            to based on the name or extension. The project templates allow you
+            to set up projects with a command.
+          </p>
+        </div>
+      </div>
+    </main>
+    <%- include('partials/footer.ejs') %>
+  </body>
+</html>

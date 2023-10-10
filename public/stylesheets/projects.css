@@ -1,0 +1,12 @@
+/*
+   Kevin Morrison
+   301316650
+   Oct 9 2023
+*/
+
+.project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}

@@ -1,3 +1,9 @@
+/*
+   Kevin Morrison
+   301316650
+   Oct 9 2023
+*/
+
 const slide = document.querySelector(".carousel-slide");
 const images = document.querySelectorAll(".carousel-slide img");
 

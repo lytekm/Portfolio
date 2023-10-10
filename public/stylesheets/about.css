@@ -1,3 +1,9 @@
+/*
+   Kevin Morrison
+   301316650
+   Oct 9 2023
+*/
+/* person image */
 .img-wrap{
     width: min-content;
     height: min-content;
@@ -20,6 +26,7 @@ h2{
     padding: 20px;
 }
 
+/* carousel */
 .carousel-container {
   display: flex;
   align-items: center;
