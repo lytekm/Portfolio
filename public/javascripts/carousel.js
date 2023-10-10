@@ -4,11 +4,14 @@
    Oct 9 2023
 */
 
+//get the slide and images
 const slide = document.querySelector(".carousel-slide");
 const images = document.querySelectorAll(".carousel-slide img");
 
+// Set the initial index
 let currentIndex = 0;
 
+// Show the first image
 function showImage(index) {
   // Hide all images
   images.forEach((img) => {

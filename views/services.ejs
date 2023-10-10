@@ -10,23 +10,25 @@
   </head>
   <body>
     <%- include ("partials/header.ejs", { aboutActive: "", projectsActive: "",
-    servicesActive: "active", contactActive: "active"})%>
+    servicesActive: "active", contactActive: ""})%>
     <main class="main">
       <h1>Services</h1>
-      <div class="service-card">
-        <img src="/images/web.svg" alt="web" />
-        <h2>Web Development</h2>
-        <p>I will develop a custom website for you.</p>
-      </div>
-      <div class="service-card">
-        <img src="/images/mobile.svg" alt="mobile" />
-        <h2>Mobile Development</h2>
-        <p>I will develop a custom mobile application for you.</p>
-      </div>
-      <div class="service-card">
-        <img src="/images/backend.svg" alt="backend" />
-        <h2>Backend Development</h2>
-        <p>I will develop a custom server application for you.</p>
+      <div class="services-container">
+        <div class="service-card">
+          <img src="/images/web.svg" alt="web" />
+          <h2>Web Development</h2>
+          <p>I will develop a custom website for you.</p>
+        </div>
+        <div class="service-card">
+          <img src="/images/mobile.svg" alt="mobile" />
+          <h2>Mobile Development</h2>
+          <p>I will develop a custom mobile application for you.</p>
+        </div>
+        <div class="service-card">
+          <img src="/images/backend.svg" alt="backend" />
+          <h2>Backend Development</h2>
+          <p>I will develop a custom server application for you.</p>
+        </div>
       </div>
     </main>
 

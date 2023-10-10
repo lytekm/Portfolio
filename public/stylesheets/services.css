@@ -3,3 +3,35 @@
    301316650
    Oct 9 2023
 */
+
+
+/* Services Page */
+.services-container{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.service-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #015c80;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.703);
+    width: 30%;
+    height: 50%;
+    transition: 200ms ease;
+}
+
+.service-card img{
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid black;
+}
