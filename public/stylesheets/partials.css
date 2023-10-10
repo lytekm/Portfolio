@@ -1,23 +1,109 @@
+/*
+   Kevin Morrison
+   301316650
+   Oct 9 2023
+*/
+
+/* CSS for all partial templates */
+
+/* Footer */
 footer{
     text-align: center;
     padding: 20px;
     float: bottom;
+    background-color: #015c80;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-ul{
+/* header */
+
+.header{
+    position: relative;
     text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: #015c80;
+    padding: 30px;
+}
+
+/* Title section of header */
+.title{
+    position: absolute;
+    left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title img{
+    width: 50px;
+    height: 50px;
+}
+
+.title h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Nav section of header */
+
+.header ul{
+   position: absolute;
+   right: 50px;
+   font-size: 20px;
+   text-align: center;
     padding: 20px;
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
-li{
+
+.header li{
     list-style-type: none;
     padding: 20px;
 }
 
-a{
+.header a{
     text-decoration: none;
     color: black;
+}
+
+/* page box */
+.page-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #015c80;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.703);
+    width: 30%;
+    height: 50%;
+    transition: 200ms ease;
+}
+
+.page-box img{
+    width: 100px;
+    height: 100px;
+}
+
+.page-box a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+.page-box:hover{
+    transform: rotate3d(1, -1, 0, 20deg);
+    background-color: #03b4f9;
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.703);
 }
