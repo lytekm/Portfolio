@@ -1,0 +1,40 @@
+.img-wrap{
+    width: min-content;
+    height: min-content;
+    padding: 5px;
+    background: linear-gradient(to right, #00B7FF, #07597a);;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-wrap img{
+    width: 200px; 
+    height: 200px; 
+    border-radius: 10%;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-slide img {
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}

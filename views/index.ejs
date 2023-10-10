@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="/stylesheets/global.css" />
   </head>
   <body>
-    <%- include ('partials/header.ejs') %>
+    <%- include ('partials/header.ejs', { aboutActive: "", projectsActive: "",
+    contactActive: "", servicesActive: "" }) %>
     <main class="main">
       <h1>Welcome to my portfolio!</h1>
       <p>
         Thank you for visiting my website. Please take a look at my projects and
-        feel free to contact me if you have any questions. <br />
+        feel free to <a href="/contact">contact me</a> if you have any
+        questions. <br />
         <br />
         My mission is to help you grow as a software engineer. I have a passion
         for creating innovative solutions that make a positive impact on the
@@ -22,13 +24,13 @@
       </p>
       <div class="pages">
         <%- include ('partials/pages-box.ejs', { pageLink: "/about", imageSrc:
-        "images/LyteDev.png", imageAlt: "imageAlt", pageText: "About Me" }) %>
+        "images/aboutme.svg", imageAlt: "imageAlt", pageText: "About Me" }) %>
         <%- include ('partials/pages-box.ejs', { pageLink: "/projects",
-        imageSrc: "images/LyteDev.png", imageAlt: "imageAlt", pageText:
+        imageSrc: "images/projects.svg", imageAlt: "imageAlt", pageText:
         "Projects" }) %> <%- include ('partials/pages-box.ejs', { pageLink:
-        "/contact", imageSrc: "images/LyteDev.png", imageAlt: "imageAlt",
+        "/contact", imageSrc: "images/contact.svg", imageAlt: "imageAlt",
         pageText: "Contact" }) %> <%- include ('partials/pages-box.ejs', {
-        pageLink: "/services", imageSrc: "images/LyteDev.png", imageAlt:
+        pageLink: "/services", imageSrc: "images/services.svg", imageAlt:
         "imageAlt", pageText: "Services" }) %>
       </div>
     </main>
