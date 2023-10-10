@@ -105,7 +105,9 @@ footer{
 
 .page-box img{
     width: 100px;
-    height: 100px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid black;
 }
 
 .page-box a{
