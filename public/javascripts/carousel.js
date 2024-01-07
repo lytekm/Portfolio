@@ -4,23 +4,30 @@
    Oct 9 2023
 */
 
-//get the slide and images
-const slide = document.querySelector(".carousel-slide");
-const images = document.querySelectorAll(".carousel-slide img");
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselContainer = document.getElementById("carousel-container");
+  const carousel = document.querySelector(".carousel");
+  const images = document.querySelectorAll(".carousel img");
 
-// Set the initial index
-let currentIndex = 0;
+  let currentIndex = 0;
+  let totalWidth = 0;
 
-// Show the first image
-function showImage(index) {
-  // Hide all images
-  images.forEach((img) => {
-    img.style.transform = `translateX(-${index * 100}%)`;
+  images.forEach((image) => {
+    totalWidth += image.width;
   });
-}
 
-function nextImage() {
-  currentIndex = (currentIndex + 1) % images.length;
-  showImage(currentIndex);
-}
-setInterval(nextImage, 3000); // Auto slide every 3 seconds
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateCarousel();
+  }
+
+  function updateCarousel() {
+    let translateValue = 0;
+    for (let i = 0; i < currentIndex; i++) {
+      translateValue -= images[i].width;
+    }
+    carousel.style.transform = "translateX(" + translateValue + "px)";
+  }
+
+  setInterval(nextSlide, 2000);
+});
